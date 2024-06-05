@@ -33,10 +33,25 @@ Le script permet d'archiver des répertoires d'utilisateurs :
 - Fichier texte non existant ou mal formaté.
 - Information erronée dans le fichier texte.
 
-### Menu de Navigation
-Le script propose un menu de navigation permettant d'accéder à toutes les opérations mentionnées.
-
 ### Traçabilité des Opérations
 Toutes les opérations et erreurs sont enregistrées dans deux fichiers log :
 - `GestionUser.log`
 - `Archivage.log`
+
+  ### Menu de Navigation
+Le script propose un menu de navigation permettant d'accéder à toutes les opérations mentionnées.
+
+![image](https://github.com/HAMZA25032005/Gestion-des-comptes-et-sauvegardes/assets/143803507/a38c74ac-e24e-45af-8523-5c37f8d005da) 
+
+### La Gestion Des Utilisateurs ET Des Groupes
+![image](https://github.com/HAMZA25032005/Gestion-des-comptes-et-sauvegardes/assets/143803507/702b3ea2-45b5-4ae4-b007-efc610e824a2)
+
+### La Gestion Des Archives
+![image](https://github.com/HAMZA25032005/Gestion-des-comptes-et-sauvegardes/assets/143803507/eb5e22aa-a5c1-4349-bf9b-c9d8b5ab05a8)
+
+
+
+
+
+
+

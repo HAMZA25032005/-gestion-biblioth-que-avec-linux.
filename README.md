@@ -1,11 +1,42 @@
-# Gestion des comptes et sauvegardes
-Ce projet vise à simplifier la gestion des utilisateurs et des sauvegardes sur un serveur Unix en automatisant les tâches courantes de l'administrateur système. Il consiste en la création d'un script shell qui permettra de gérer efficacement les comptes utilisateurs, les groupes, ainsi que les sauvegardes des répertoires.
-Le script de gestion des utilisateurs et des sauvegardes offre les fonctionnalités suivantes :
+# Gestion des Comptes Utilisateurs et des Sauvegardes
 
--Gestion des utilisateurs et des groupes : Ajout, liste et suppression d'utilisateurs et de groupes. Prise en charge de l'ajout en masse de groupes à partir d'un fichier CSV, ainsi que la suppression en masse d'utilisateurs depuis un fichier CSV. Gestion des erreurs telles que les doublons et les fichiers CSV mal formatés.
+## Introduction
 
--Gestion des archives : Archivage de répertoires individuels ou groupés avec suppression automatique des originaux. Prise en charge de l'archivage manuel ou à partir d'un fichier texte. Gestion des erreurs comme les répertoires inexistants et les fichiers texte mal formatés.
+Ce projet a pour objectif de développer un script permettant de gérer les comptes utilisateurs et leurs répertoires sur un serveur Unix. Le script encapsule différentes opérations administratives pour simplifier la gestion et éviter les erreurs courantes. Il offre des fonctionnalités pour gérer les utilisateurs et les groupes ainsi que pour archiver les répertoires.
 
--Menu de navigation : Interface interactive permettant aux utilisateurs de sélectionner facilement les opérations à effectuer, offrant une expérience conviviale.
+## Spécifications Fonctionnelles
 
--Traçabilité des opérations : Enregistrement de toutes les actions et erreurs dans deux fichiers journaux distincts, GestionUser.log et Archivage.log, pour faciliter la gestion et la résolution des problèmes.
+### Gestion des Utilisateurs et des Groupes
+Le script permet à l'administrateur de :
+- Ajouter un utilisateur avec un login, un mot de passe et un groupe.
+- Ajouter un groupe d'utilisateurs à partir d'un fichier CSV.
+- Créer un groupe.
+- Lister les utilisateurs avec leur login et groupe.
+- Supprimer un utilisateur par login.
+- Supprimer un groupe et tous ses utilisateurs.
+- Supprimer un ensemble d'utilisateurs à partir d'un fichier CSV.
+
+#### Erreurs Gérées
+- Utilisateur déjà existant ou groupe non existant.
+- Fichier CSV non existant ou mal formaté.
+- Information erronée dans un fichier CSV.
+- Suppression d'un utilisateur ou groupe non existant.
+
+### Gestion des Archives
+Le script permet d'archiver des répertoires d'utilisateurs :
+- Archiver un répertoire.
+- Archiver un ensemble de répertoires.
+- Archiver un ensemble de répertoires à partir d'un fichier texte.
+
+#### Erreurs Gérées
+- Répertoire non existant.
+- Fichier texte non existant ou mal formaté.
+- Information erronée dans le fichier texte.
+
+### Menu de Navigation
+Le script propose un menu de navigation permettant d'accéder à toutes les opérations mentionnées.
+
+### Traçabilité des Opérations
+Toutes les opérations et erreurs sont enregistrées dans deux fichiers log :
+- `GestionUser.log`
+- `Archivage.log`
